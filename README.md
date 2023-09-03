@@ -4,7 +4,6 @@ Foobar is a Python library for dealing with word pluralization.
 
 ## How to run:
 
-0. Please be sure to have CORS plugin enabled in your browser
 1. npm i
 2. ng serve
 
