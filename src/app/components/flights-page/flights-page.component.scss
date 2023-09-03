@@ -1,0 +1,21 @@
+:host {
+    display: flex;
+    height: 100%;
+
+    .panel {
+        border: 2px solid black;
+        &.left {
+            flex: 1;
+        }
+        &.center {
+            flex: 4;
+            border-left: none;
+            border-right: none;
+        }
+        &.right {
+            flex: 2;
+        }
+
+    }
+
+}

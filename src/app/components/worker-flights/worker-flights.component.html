@@ -1,0 +1,20 @@
+<div class="flights_table">
+    <div class="flights_table-header">
+        <div class="flights_table-header__item">Flight Number</div>
+        <div class="flights_table-header__item">Origin</div>
+        <div class="flights_table-header__item">Origin Date</div>
+        <div class="flights_table-header__item">Destination</div>
+        <div class="flights_table-header__item">Destination Date</div>
+    </div>
+    <div *ngFor="let flight of flights"
+         (click)="selectFlight(flight)"
+         class="flights_table-content"
+         [ngClass]="{selected: isSelected(flight)}"
+          >
+        <div class="flights_table-content__item">{{flight.num}}</div>
+        <div class="flights_table-content__item">{{flight.from}}</div>
+        <div class="flights_table-content__item">{{flight.from_date}}</div>
+        <div class="flights_table-content__item">{{flight.to}}</div>
+        <div class="flights_table-content__item">{{flight.to_date}}</div>
+    </div>
+</div>

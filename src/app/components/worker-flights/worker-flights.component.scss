@@ -1,0 +1,33 @@
+
+.flights_table {
+    overflow: auto;
+    height: 100%;
+
+    &-header {
+        display: flex;
+
+        &__item {
+            flex: 1;
+            border-top: 2px solid #f3f3f3;
+            margin-top: 20px;
+            padding: 20px;
+            color: #aeaeae;
+
+        }
+    }
+    &-content {
+        display: flex;
+        cursor: pointer;
+        border-top: 1px solid #f3f3f3;
+
+        &.selected {
+            background-color: #eee;
+
+        }
+        &__item {
+            flex: 1;
+            padding: 20px;
+
+        }
+    }
+}

@@ -1,0 +1,4 @@
+<div class="panel left"><app-workers-list></app-workers-list></div>
+<div class="panel center"><app-worker-flights (onSelectFlight)="selectFlight($event)"></app-worker-flights></div>
+<div class="panel right"><app-flight-info [flight]="selectedFlight"></app-flight-info></div>
+

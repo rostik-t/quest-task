@@ -1,0 +1,30 @@
+
+:host {
+    height: 100%;
+    display: block;
+    overflow: auto;
+
+}
+
+.title {
+    height: 60px;
+    background-color: #80ffff;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.worker {
+    &-item {
+        cursor: pointer;
+        height: 20px;
+        padding-left: 10px;
+        padding-top: 5px;
+
+        &.selected {
+            background-color: #e3e3e6;
+            border: 1px solid black;
+        }
+    }
+}

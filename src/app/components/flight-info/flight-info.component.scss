@@ -1,0 +1,11 @@
+.info {
+    margin-top: 80px;
+    border-bottom: 2px solid #d4d4d4;
+    &_row {
+        border-bottom: 1px solid #f3f3f3;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 40px 10px 20px;
+    }
+
+}

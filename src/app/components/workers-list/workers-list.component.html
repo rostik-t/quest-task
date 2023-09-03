@@ -1,0 +1,6 @@
+<div class="title">Workers</div>
+
+<div *ngFor="let worker of workers" class="worker-item" [ngClass]="{'selected': isSelected(worker.id)}">
+    <div (click)="select(worker.id)">{{worker.name}}</div>
+</div>
+
